@@ -26,6 +26,14 @@
   "A5": "aae365c7-2aa6-4fb3-905e-2bd8843f6399",
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
++ MetaData.Schema.D2 {
+  "UId": "83d31a75-d52b-a5c5-ab20-c6abc253ac30",
+  "A2": "UsrColor",
+  "A3": "8969e346-a37a-4479-8740-6b78c46f6618",
+  "A4": "8969e346-a37a-4479-8740-6b78c46f6618",
+  "A5": "aae365c7-2aa6-4fb3-905e-2bd8843f6399",
+  "S2": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -33,7 +41,8 @@
   "9928edec-4272-425a-93bb-48743fee4b04",
   "3015559e-cbc6-406a-88af-07f7930be832",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "44404271-585c-9c08-8457-1feb234d3c87"
+  "44404271-585c-9c08-8457-1feb234d3c87",
+  "83d31a75-d52b-a5c5-ab20-c6abc253ac30"
 ]
 = MetaData.Schema.D20.A2 "UsrTrafficLightEvents"
 + MetaData.Schema.D20.FA1 false
