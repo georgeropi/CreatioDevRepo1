@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "04dbb10c-5720-2b72-8e24-c0c165fbc439",
+    "Name": "UsrTRSysAdminRootEnable",
+    "DBEngineType": 0,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1795617274000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,99 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "0e8d4bf8-b0b2-49f1-8d7d-8083f1e6acd3",
+      "A2": "UsrYacht_FormPageBusinessRule",
+      "A5": "aae365c7-2aa6-4fb3-905e-2bd8843f6399",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "8bf7bd14-6bef-4814-80db-5bcd246f81ae",
+      "B8": "10.0.0.801",
+      "AD1": "15fae140-b61c-4616-bd92-625ae4859b27",
+      "AD2": "ClientUnitSchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "0109b388-cf69-fea6-9606-2e2c2d464d48",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "ea304947-153b-97b9-18a2-1a9cfbe15713",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "44cf94c4-3a18-5107-610f-9720d1f0db19",
+                  "BGC1": 2,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "052beeae-761f-39a8-683b-0e96cb214e00",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSysValueExpression",
+                        "UId": "daa0f578-7c3c-71d8-1fb9-484f06ab029d",
+                        "BRE1": "Lookup",
+                        "BRE2": "SysValue",
+                        "BSV1": "CurrentUserContact"
+                      },
+                      "BCO2": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "26c992ba-ff36-e5d7-4893-f1cb7b2a721d",
+                        "BRE1": "Lookup",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PDS_UsrManager_gc7ypdv"
+                      },
+                      "BCO3": 2
+                    },
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "9d0a1bfe-5ccb-9883-fbcc-442ec53b1562",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSysValueExpression",
+                        "UId": "55f17618-88f7-5bb4-b06b-689e0b5c174d",
+                        "BRE1": "ObjectList",
+                        "BRE2": "SysValue",
+                        "BSV1": "CurrentUserRoles"
+                      },
+                      "BCO2": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                        "UId": "0f9b5aab-2be6-2cdd-0d6f-5bcbc98ca01a",
+                        "BRE1": "Lookup",
+                        "BRE3": "SysAdminUnit",
+                        "BVE1": "d58d87fd-fa21-46b9-8769-3e91204b3789"
+                      },
+                      "BCO3": 11
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
+                    "UId": "8136b267-868d-e981-c83a-5356d4e825ba",
+                    "BRA4": "TicketPrice"
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "b5cc755b-f02f-813b-984b-9736a4d5ca98",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "94878202-6446-83b1-aa03-12b5662b635d",
+                "BRT1": "PDS_UsrManager_gc7ypdv"
+              }
+            ],
+            "BR3": "BusinessRule_38d4e44"
+          }
+        ]
+      }
+    }
+  }
+}
