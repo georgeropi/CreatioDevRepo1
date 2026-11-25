@@ -132,6 +132,29 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "YachtNumber",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrYachtNumber_dbbte14",
+					"control": "$PDS_UsrYachtNumber_dbbte14",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "Length",
 				"values": {
 					"layoutConfig": {
@@ -369,6 +392,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Categories",
+				"values": {
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(Categories_label)#",
+					"recordId": "$Id",
+					"recordRelationColumnName": "UsrYachtParent",
+					"selectSchemaName": "UsrCategoryInYacht",
+					"selectColumnName": "UsrCategory",
+					"visible": true,
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"required": false
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -494,6 +537,14 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"modelConfig": {
 							"path": "PDS.UsrStatusDescription"
 						}
+					},
+					"PDS_UsrYachtNumber_dbbte14": {
+						"modelConfig": {
+							"path": "PDS.UsrYachtNumber"
+						}
+					},
+					"Categories_List_Items_Predefined_Filter": {
+						"value": null
 					}
 				}
 			},
